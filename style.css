@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: #f9f9f9;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container #game-wrapper {
+  padding: 4rem 4.5rem;
+  background-color: #293462;
+  color: #fff;
+}
+.container #game-wrapper #modal {
+  padding: 1rem 1.2rem;
+  border-radius: 5px;
+  margin-bottom: 1.2rem;
+  position: relative;
+  display: none;
+}
+
+.container #game-wrapper #modal.active {
+  display: block;
+}
+
+.container #game-wrapper #modal p {
+  margin-right: 0.5rem;
+}
+
+.container #game-wrapper #modal .close-modal {
+  position: absolute;
+  top: 3px;
+  right: 2px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.container #game-wrapper h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.2rem;
+  text-align: left;
+}
+
+.container #game-wrapper .text {
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+}
+
+.container #game-wrapper .guess-input {
+  width: 220px;
+  height: 30px;
+  outline: 0;
+  border-radius: 3px;
+  border: 0;
+}
+
+.container #game-wrapper #guess-btn {
+  width: 80px;
+  height: 30px;
+  border-radius: 3px;
+  cursor: pointer;
+  border: 0;
+  font-weight: 400;
+}
