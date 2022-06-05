@@ -20,15 +20,15 @@ body {
 }
 
 .container #game-wrapper {
-  padding: 4rem 4.5rem;
+  padding: 2.5rem 2rem;
   background-color: #293462;
   color: #fff;
+  width: 400px;
 }
 .container #game-wrapper #modal {
   padding: 1rem 1.2rem;
   border-radius: 5px;
-  margin-bottom: 1.2rem;
-  position: relative;
+  margin-bottom: 1rem;
   display: none;
 }
 
@@ -40,19 +40,9 @@ body {
   margin-right: 0.5rem;
 }
 
-.container #game-wrapper #modal .close-modal {
-  position: absolute;
-  top: 3px;
-  right: 2px;
-  color: #fff;
-  cursor: pointer;
-  font-size: 1.2rem;
-}
-
 .container #game-wrapper h1 {
   font-size: 2.5rem;
   margin-bottom: 0.2rem;
-  text-align: left;
 }
 
 .container #game-wrapper .text {
@@ -62,17 +52,25 @@ body {
 
 .container #game-wrapper .guess-input {
   width: 220px;
-  height: 30px;
   outline: 0;
   border-radius: 3px;
   border: 0;
+  padding: 8px;
 }
 
 .container #game-wrapper #guess-btn {
   width: 80px;
-  height: 30px;
+  padding: 8px;
   border-radius: 3px;
   cursor: pointer;
   border: 0;
+  outline: 0;
   font-weight: 400;
+  transition: all 0.3s ease-in;
+}
+
+.container #game-wrapper #guess-btn:hover {
+  background-color: rgba(41, 52, 98, 0.9);
+  color: #fff;
+  border: 0.5px solid #f9f9f9;
 }
